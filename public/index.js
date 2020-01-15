@@ -5,7 +5,7 @@ document.addEventListener('click', (event) => {
     if(event.target.id === 'getSearchedLocation') {
         const locationParam = input.split(' ').join('-');
         const searchParams = `?location=${locationParam}`;
-        window.location.replace('http://localhost:3000/weather' + searchParams)
+        window.location.replace('/weather' + searchParams)
     }
 })
 
@@ -15,6 +15,6 @@ document.addEventListener('keypress', (event) => {
     if(event.charCode === 13 && input) {
         const locationParam = input.split(' ').join('-');
         const searchParams = `?location=${locationParam}`;
-        window.location.replace('http://localhost:3000/weather' + searchParams)
+        window.location.replace('/weather' + searchParams)
     }
 })
