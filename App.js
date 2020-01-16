@@ -19,7 +19,9 @@ app.get('/json-help', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.send(`<h4>In three words I can sum up everything I've learned about life: it goes on.</h4>`)
+    res.send(`<h4>In three words I can sum up everything I've learned about life: it goes on.</h4>
+    <h3> This website is created by Coman Alexandru. </h3>
+    <p> It uses data from mapbox.com and darksky.net</p>`)
 })
 
 app.get('/weather', async (req, res) => {
